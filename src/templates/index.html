@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Bellybites adalah sebuah website yang menyajikan katalog restoran dari berbagai daerah yang dapat membantu anda dalam mencaari cita rasa kuliner yang beragam">
+  <meta name="theme-color" content="#C63D2F"/>
+  <title>BellyBites</title>
+
+  <!-- Google Font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap"
+    rel="stylesheet">
+
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+  <link rel="icon" href="https://i.pinimg.com/originals/5e/ff/e6/5effe6a20b12cec3fb0bbe38c0585992.png">
+
+  <link rel="manifest" href="./app.webmanifest">
+  <link rel="apple-touch-icon" href="/icons/icon192x192.png">
+  <link rel="apple-touch-startup-image" href="/icons/icon192x192.png">
+
+  <script src="https://use.fontawesome.com/b070c8f1df.js"></script>
+
+</head>
+
+<body>
+  <a href="#main-content" class="skip-link">Skip to Content</a>
+  <header>
+    <nav role="navigation">
+      <div class="logo-container">
+        <img class="logo" src="https://i.pinimg.com/originals/5e/ff/e6/5effe6a20b12cec3fb0bbe38c0585992.png"
+          alt="Brand Logo" width="75px">
+        <label class="logo-txt">BellyBites</label>
+      </div>
+      <input type="checkbox" id="check" class="active" aria-label="Toggle Navigation">
+      <button tabindex="0" class="bellybites-btn" id="nav-btn">☰</button>
+      <ul class="nav-list">
+        <li><a class="navigasi" href="#/">Beranda</a></li>
+        <li><a class="navigasi" href="#/favorite">Favorite</a></li>
+        <li><a class="navigasi about-us-link" href="https://www.linkedin.com/in/ika-triyana-1a1020236/" target="_blank" rel="noopener">About Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="card">
+    <div class="hero">
+      <div class="hero__inner">
+        <h1 class="hero__title">Temukan Lezatnya Kuliner dengan BellyBites</h1>
+        <p class="hero__tagline">
+          Jelajahi kelezatan kuliner dari berbagai Restoran terpercaya dan terbaik yang telah kami sediakan.
+          Kamu pasti menyukainya!
+        </p>
+      </div>
+    </div>
+    <section class="content" tabindex="0" id="main-content">
+      <explore-component></explore-component>
+    </section>
+    <section class="search-section" tabindex="0">
+      <div class="section-title">
+        <h2>Kamu bisa mencari Restoran disini</h2>
+        <p>Klik tombol dibawah untuk mulai melakukan pencarian restoran yang kamu inginkan
+        </p>
+        <button class="headline__button" id="starterSearchButton">Mulai Mencari</button>
+      </div>
+    </section>
+    <section class="content-restourant">
+      <article id="mainContent" tabindex="0">
+
+      </article>
+    </section>
+    <menu-custom></menu-custom>
+  </main>
+
+  <footer class="footer">
+    <div class="footer-content">
+      <div class="footer-logo">
+        <img src="https://i.pinimg.com/originals/5e/ff/e6/5effe6a20b12cec3fb0bbe38c0585992.png"
+          alt="BellyBites App Logo">
+      </div>
+      <div class="footer-links">
+        <ul>
+          <li><a href="/">Home</a></li>
+          <li><a href="#">Favorite</a></li>
+          <li><a href="https://www.linkedin.com/in/ika-triyana-1a1020236/" target="_blank" rel="noopener">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-social">
+        <a href="#" target="_blank" rel="noopener" class="social-icon facebook" aria-label="our facebook account"><i class="fab fa-facebook"></i></a>
+        <a href="#" target="_blank" rel="noopener" class="social-icon twitter" aria-label="our twitter account"><i class="fab fa-twitter"></i></a>
+        <a href="https://www.instagram.com/your_na_14/" target="_blank" rel="noopener" class="social-icon instagram" aria-label="our instagram"><i class="fab fa-instagram"></i></a>
+      </div>
+    </div>
+    <div class="footer-disclaimer">
+      &copy; 2023 BellyBites App. Hak Cipta Dilindungi. Gambar dan konten hanya untuk tujuan ilustrasi
+    </div>
+  </footer>
+</body>
+
+</html>
