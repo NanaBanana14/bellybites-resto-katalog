@@ -131,6 +131,6 @@ module.exports = {
     new MiniCssExtractPlugin({
       filename: 'styles/style.css', // Nama file CSS hasil kompilasi
     }),
-    new BundleAnalyzerPlugin(),
+    // new BundleAnalyzerPlugin(),
   ],
 };
